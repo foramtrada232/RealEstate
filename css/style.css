@@ -53,6 +53,7 @@ header{
     height: 426px;
     filter: drop-shadow(0 0 26px #000000);
     background-color: #000000;
+    margin-bottom: 60px;
 }
 .dark-input{
     background-color: #141414;
@@ -113,4 +114,191 @@ header{
     color: #ffffff;
     font-family: "Hind";
     font-weight: 700;
+}
+.image-card{
+    margin: 200px 0 25px 0;
+}
+
+/* How it works */
+.how-work-section{
+    background-color: #000;
+}
+.simple-text{
+    font-size: 18px;
+    /* line-height: 63px; */
+    color: #be2d5d;
+    font-family: "Hind";
+    font-weight: 600;
+}
+.how-work-text{
+    font-size: 36px;
+    /* line-height: 63px; */
+    color: #ffffff;
+    font-family: "Hind";
+    font-weight: 600;
+}
+.text-box{
+    border: 2px solid #181818;
+    margin: 50px 0;
+}
+.image-heading{
+    font-size: 22px;
+    line-height: 63px;
+    color: #ffffff;
+    font-family: "Hind";
+    font-weight: 600;
+}
+.image-below-text{
+    font-size: 16px;
+    line-height: 28px;
+    color: #bcbcbc;
+    font-family: "Hind";
+    font-weight: 400;
+    padding: 0 50px 25px 0;
+}
+
+/* Property Section */
+.property-section{
+    background-image: url('../imges/prop-bg.png');
+    /* background-color: red; */
+}
+/* slider button */
+.slick-next{
+    background: #be2d5d;
+    right: 0%;
+    position: absolute;
+    top: 34%;
+    border: none;
+    padding: 5px 9px;
+    color: #fff;
+}
+.slick-prev{
+    background: #be2d5d;
+    top: 34%;
+    position: absolute;
+    left: -1%;
+    border: none;
+    /* margin-right: 30px; */
+    margin-left: 8px;
+}
+.sale-text{
+    font-size: 36px;
+    color: #000000;
+    font-family: "Hind";
+    font-weight: 600;
+}
+.occupy-text{
+    font-size: 18px;
+    color: #be2d5d;
+    font-family: "Hind";
+    font-weight: 600;
+}
+.property-box{
+    border : 2px solid #d7d8d9;
+    margin : 60px 0 50px 0;
+}
+.slider-heading{
+    font-size: 20px;
+    /* line-height: 63px; */
+    color: #be2d5d;
+    font-family: "Hind";
+    font-weight: 500;
+}
+.prop-card-text{
+    font-size: 16px;
+    /* line-height: 63px; */
+    color: #000000;
+    font-family: "Hind";
+    font-weight: 500;
+}
+.inside-card-text{
+    font-size: 14px;
+    /* line-height: 63px; */
+    color: #000000;
+    font-family: "Hind";
+    font-weight: 300;
+}
+.card-simple-text{
+    font-size: 16px;
+    line-height: 25px;
+    color: #000000;
+    font-family: "Hind";
+    font-weight: 300;
+}
+.card-below-text img {
+    padding-right: 10px;
+}
+.image-button .btn {
+    position: absolute;
+    top: 8%;
+    right: -6%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #0076a3;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Hind";
+    font-weight: 600;
+}
+.property-slider .card{
+    margin-bottom: 50px;
+}
+.slick-initialized .slick-slide {
+    /* display: block; */
+    padding: 15px!important;
+}
+/* Service Section */
+.services-section{
+    background-image: url('../imges/service-bg-img.png');
+    background-position-x: 50%;
+}
+.service-heading{
+    font-size: 18px;
+    color: #be2d5d;
+    font-family: "Hind";
+    font-weight: 600;
+    padding-top: 50px;
+}
+.our-service-text{
+    font-size: 40px;
+    color: #ffffff;
+    font-family: "Hind";
+    font-weight: 600;
+    margin: -15px 0 30px 0;
+}
+.serv-img-heading{
+    font-size: 24px;
+    line-height: 63px;
+    color: #ffffff;
+    font-family: "Hind";
+    font-weight: 600;
+    margin: 15px 0 0 0;
+}
+.service-simple-text{
+    font-size: 16px;
+    line-height: 30px;
+    color: #ffffff;
+    font-family: "Hind";
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+.property-slider{
+    /* padding: 15px; */
+}
+
+/* Trending Section  */
+.trending-heading{
+    font-size: 18px;
+    color: #be2d5d;
+    font-family: "Hind";
+    font-weight: 600;
+}
+.trending-header{
+    font-size: 40px;
+    color: #000000;
+    font-family: "Hind";
+    font-weight: 600;
 }

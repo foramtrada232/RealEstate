@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
@@ -135,9 +137,209 @@
                     </div>
                 </center>
             </div>
-            <div class="col-lg-5"></div>
+            <div class="col-lg-5">
+                <div class="row flex justify-content-center">
+                    <div class="row image-card">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-4">
+                            <img src="./imges/apartment.png">
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-4">
+                            <img src="imges/house.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-4">
+                            <img src="./imges/luxury.png">
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-4">
+                            <img src="./imges/villa.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="how-work-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 text-box">
+                    <span class="simple-text">SIMPLE STEPS</span><br>
+                    <span class="how-work-text">How It Works</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="./imges/map.png">
+                    <p class="image-heading">
+                        Map Search
+                    </p>
+                    <p class="image-below-text">
+                        search exactly ahere you are intersted to buy a property with your budget and requierment
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./imges/search-house.png">
+                    <p class="image-heading">
+                        Property Lookup
+                    </p>
+                    <p class="image-below-text">
+                        Search with estimated values,energy scores and market insights for any property in your area
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./imges/loan.png">
+                    <p class="image-heading">
+                        Buy / Sell Property
+                    </p>
+                    <p class="image-below-text">
+                        Visit and Understand your local market, learn how to get the best price for your property Easily
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="property-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 property-box">
+                    <span class="occupy-text">OCCUPY NOW</span><br>
+                    <span class="sale-text">Properties for Sale</span>
+                </div>
+            </div>
+            <div class="property-slider">
+                <!-- <div class="col-lg-4"> -->
+                <div class="card">
+                    <div class="image-button">
+                        <img class="card-img-top" src="./imges/slider-image1.png" alt="Card image cap">
+                        <button class="btn">For Sale</button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title slider-heading">Apartment in Memorial Texas</h5>
+                        <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text">$ 788 per
+                                sqft</span></p>
+                        <p class="card-simple-text">Ut euismod ultricies sollicitudin.Curabitur sed dapibus nulla
+                        </p>
+                        <p class="card-below-text"><img src="./imges/bathtub.png"><span class="inside-card-text pr-2">
+                                Baths: 2</span> <img src="./imges/slumber.png">
+                            Bedroom: 3</p>
+                    </div>
+                </div>
+                <!-- </div>
+                <div class="col-lg-4"> -->
+                <div class="card">
+                    <div class="image-button">
+                        <img class="card-img-top" src="./imges/slider-image2.png" alt="Card image cap">
+                        <button class="btn">For Sale</button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title slider-heading">Apartment in Memorial Texas</h5>
+                        <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text">$ 788 per
+                                sqft</span></p>
+                        <p class="card-simple-text">Ut euismod ultricies sollicitudin.Curabitur sed dapibus nulla
+                        </p>
+                        <p class="card-below-text"><img src="./imges/bathtub.png"><span class="inside-card-text pr-2">
+                                Baths: 2</span> <img src="./imges/slumber.png">
+                            Bedroom: 3</p>
+                    </div>
+                </div>
+                <!-- </div>
+                <div class="col-lg-4"> -->
+                <div class="card">
+                    <div class="image-button">
+                        <img class="card-img-top" src="./imges/slider-image3.png" alt="Card image cap">
+                        <button class="btn">For Sale</button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title slider-heading">Apartment in Memorial Texas</h5>
+                        <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text">$ 788 per
+                                sqft</span></p>
+                        <p class="card-simple-text">Ut euismod ultricies sollicitudin.Curabitur sed dapibus nulla
+                        </p>
+                        <p class="card-below-text"><img src="./imges/bathtub.png"><span class="inside-card-text pr-2">
+                                Baths: 2</span> <img src="./imges/slumber.png">
+                            Bedroom: 3</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-button">
+                        <img class="card-img-top" src="./imges/slider-image3.png" alt="Card image cap">
+                        <button class="btn">For Sale</button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title slider-heading">Apartment in Memorial Texas</h5>
+                        <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text">$ 788 per
+                                sqft</span></p>
+                        <p class="card-simple-text">Ut euismod ultricies sollicitudin.Curabitur sed dapibus nulla
+                        </p>
+                        <p class="card-below-text"><img src="./imges/bathtub.png"><span class="inside-card-text pr-2">
+                                Baths: 2</span> <img src="./imges/slumber.png">
+                            Bedroom: 3</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-button">
+                        <img class="card-img-top" src="./imges/slider-image3.png" alt="Card image cap">
+                        <button class="btn">For Sale</button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title slider-heading">Apartment in Memorial Texas</h5>
+                        <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text">$ 788 per
+                                sqft</span></p>
+                        <p class="card-simple-text">Ut euismod ultricies sollicitudin.Curabitur sed dapibus nulla
+                        </p>
+                        <p class="card-below-text"><img src="./imges/bathtub.png"><span class="inside-card-text pr-2">
+                                Baths: 2</span> <img src="./imges/slumber.png">
+                            Bedroom: 3</p>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="services-section">
+        <div class="container">
+            <p class="service-heading">WHAT WE DO FOR YOU</p>
+            <p class="our-service-text">Our Services</p>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="./imges/service-house.png">
+                    <p class="serv-img-heading">Renting and Selling Service</p>
+                    <p class="service-simple-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./imges/service-settings.png">
+                    <p class="serv-img-heading">Property Managment</p>
+                    <p class="service-simple-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./imges/service-apartment.png">
+                    <p class="serv-img-heading">Property Listing</p>
+                    <p class="service-simple-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trending-section">
+        <div class="container">
+            <p class="service-heading">OCCUPY NOW</p><br>
+            <p class="trending-header">Trending Properties</p>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -154,20 +356,26 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
+    <!-- Slick js-->
+    
     <!-- Initialize Bootstrap functionality -->
     <script>
-
+        
         // Initialize tooltip component
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
         })
-
+        
         // Initialize popover component
         $(function () {
             $('[data-toggle="popover"]').popover()
         })
+        
+        </script>
 
-    </script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- Custom js-->
+    <script type="text/javascript" src="js/custom.js"></script>
 </body>
 
 </html>
