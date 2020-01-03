@@ -7,16 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
 </head>
 
 <body>
     <div class="header-section">
-        <header>
+        <header id="change">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light p-0 m-0 header-menu">
                     <a class="navbar-brand logo" href="index.html"><img src="./imges/RealEstate.png"></a>
@@ -45,118 +46,150 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">CONTACT US</a>
                             </li>
+                            <div class="">
+                                <li class="nav-item searchlink" id="searchlink">
+                                    <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+                                    <div class="searchform">
+                                        <form id="search" action="">
+                                            <input type="text" class="s" id="s" name="s" placeholder="keywords...">
+                                            <button type="submit" class="sbtn"><i class="fa fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                </li>
+                            </div>
                         </ul>
                     </div>
                 </nav>
         </header>
-        <div class="row">
-            <div class="col-lg-7">
-                <p class="banner-heading">Buy & Sell Property Here</p>
-                <p class="banner-text">Find Apartments,Business & Houses Everywhere</p>
-                <center>
-                    <div class="rectangle">
-                        <div class="input_with_icon">
-                            <input type="text" class="dark-input" placeholder="Enter Location,Property,Landmark">
-                            <img src="./imges/search.png">
-                        </div>
-                        <div class="row no-gutters mr-4">
-                            <div class="col-lg-6">
-                                <select class="dark-input rect-select">
-                                    <option selected>All Actions</option>
-                                    <option value="volvo">Volvo</option>
-                                    <option value="fiat">Fiat</option>
-                                    <option value="audi">Audi</option>
-                                </select>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-7 bg-black-shadow">
+                    <div class="black-shadow-content">
+                        <p class="banner-heading">Buy & Sell Property Here</p>
+                        <p class="banner-text">Find Apartments,Business & Houses Everywhere</p>
+                        <center>
+                            <div class="rectangle">
+                                <div class="input_with_icon">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control dark-input"
+                                            placeholder="Enter Location,Property,Landmark"
+                                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-search"
+                                                    aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row no-gutters mr-4">
+                                    <div class="col-sm-6">
+                                        <select class="dark-input rect-select">
+                                            <option selected>All Actions</option>
+                                            <option value="volvo">Volvo</option>
+                                            <option value="fiat">Fiat</option>
+                                            <option value="audi">Audi</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <select class="dark-input rect-select">
+                                            <option selected>All Types</option>
+                                            <option value="volvo">Volvo</option>
+                                            <option value="fiat">Fiat</option>
+                                            <option value="audi">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row no-gutters mr-4">
+                                    <div class="col-sm-6">
+                                        <select class="dark-input rect-select">
+                                            <option selected>All Cities</option>
+                                            <option value="volvo">Volvo</option>
+                                            <option value="fiat">Fiat</option>
+                                            <option value="audi">Audi</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <select class="dark-input rect-select">
+                                            <option selected>All Areas</option>
+                                            <option value="volvo">Volvo</option>
+                                            <option value="fiat">Fiat</option>
+                                            <option value="audi">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row no-gutters mr-4">
+                                    <div class="col-sm-6">
+                                        <select class="dark-input rect-select">
+                                            <option selected>Max Rooms</option>
+                                            <option value="volvo">Volvo</option>
+                                            <option value="fiat">Fiat</option>
+                                            <option value="audi">Audi</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <select class="dark-input rect-select">
+                                            <option selected>All Bed Rooms</option>
+                                            <option value="volvo">Volvo</option>
+                                            <option value="fiat">Fiat</option>
+                                            <option value="audi">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row no-gutters mr-4">
+                                    <div class="col-sm-6">
+                                        <select class="dark-input rect-select">
+                                            <option selected>All Baths</option>
+                                            <option value="volvo">Volvo</option>
+                                            <option value="fiat">Fiat</option>
+                                            <option value="audi">Audi</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <select class="dark-input rect-select">
+                                            <option selected>All Garages</option>
+                                            <option value="volvo">Volvo</option>
+                                            <option value="fiat">Fiat</option>
+                                            <option value="audi">Audi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <button class="search-property">Search Property</button>
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <select class="dark-input rect-select">
-                                    <option selected>All Types</option>
-                                    <option value="volvo">Volvo</option>
-                                    <option value="fiat">Fiat</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row no-gutters mr-4">
-                            <div class="col-lg-6">
-                                <select class="dark-input rect-select">
-                                    <option selected>All Cities</option>
-                                    <option value="volvo">Volvo</option>
-                                    <option value="fiat">Fiat</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-6">
-                                <select class="dark-input rect-select">
-                                    <option selected>All Areas</option>
-                                    <option value="volvo">Volvo</option>
-                                    <option value="fiat">Fiat</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row no-gutters mr-4">
-                            <div class="col-lg-6">
-                                <select class="dark-input rect-select">
-                                    <option selected>Max Rooms</option>
-                                    <option value="volvo">Volvo</option>
-                                    <option value="fiat">Fiat</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-6">
-                                <select class="dark-input rect-select">
-                                    <option selected>All Bed Rooms</option>
-                                    <option value="volvo">Volvo</option>
-                                    <option value="fiat">Fiat</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row no-gutters mr-4">
-                            <div class="col-lg-6">
-                                <select class="dark-input rect-select">
-                                    <option selected>All Baths</option>
-                                    <option value="volvo">Volvo</option>
-                                    <option value="fiat">Fiat</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-6">
-                                <select class="dark-input rect-select">
-                                    <option selected>All Garages</option>
-                                    <option value="volvo">Volvo</option>
-                                    <option value="fiat">Fiat</option>
-                                    <option value="audi">Audi</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <button class="search-property">Search Property</button>
-                        </div>
+                        </center>
                     </div>
-                </center>
-            </div>
-            <div class="col-lg-5">
-                <div class="row flex justify-content-center">
-                    <div class="row image-card">
-                        <div class="col-lg-1"></div>
-                        <div class="col-lg-4">
-                            <img src="./imges/apartment.png">
+                </div>
+                <div class="col-lg-5 bg-pink-shadow">
+                    <div class="flex justify-content-center image-card ">
+                        <div class="row small-image">
+                            <div class="col-sm-6">
+                                <div class="black-image" data-aos="zoom-in">
+                                    <img class="overlay-img mt-4" src="./imges/building.png">
+                                    <p>Appartment</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 left-img">
+                                <div class="black-image" data-aos="zoom-in">
+                                    <img class="overlay-img mt-4" src="imges/house.png">
+                                    <p>House</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-1"></div>
-                        <div class="col-lg-4">
-                            <img src="imges/house.png">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-1"></div>
-                        <div class="col-lg-4">
-                            <img src="./imges/luxury.png">
-                        </div>
-                        <div class="col-lg-1"></div>
-                        <div class="col-lg-4">
-                            <img src="./imges/villa.png">
+                        <div class="row small-image mt-3">
+                            <div class="col-sm-6 pt-1">
+                                <div class="black-image" data-aos="zoom-in">
+                                    <img class="overlay-img mt-4 p-1" src="./imges/mansion.png">
+                                    <p>Luxury</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 left-img">
+                                <div class="black-image" data-aos="zoom-in">
+                                    <img class="overlay-img mt-4" src="./imges/villa.png">
+                                    <p>Villa</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -165,23 +198,21 @@
     </div>
     <div class="how-work-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3 text-box">
-                    <span class="simple-text">SIMPLE STEPS</span><br>
-                    <span class="how-work-text">How It Works</span>
-                </div>
+            <div class="text-box">
+                <p class="simple-text">SIMPLE TEXT</p>
+                <P class="how-work-text">How It Works</P>
             </div>
-            <div class="row">
-                <div class="col-lg-4">
+            <div class="row work-section">
+                <div class="col-lg-4" data-aos="fade-down">
                     <img src="./imges/map.png">
                     <p class="image-heading">
                         Map Search
                     </p>
                     <p class="image-below-text">
-                        search exactly ahere you are intersted to buy a property with your budget and requierment
+                        search exactly where you are intersted to buy a property with your budget and requierment
                     </p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-down">
                     <img src="./imges/search-house.png">
                     <p class="image-heading">
                         Property Lookup
@@ -190,7 +221,7 @@
                         Search with estimated values,energy scores and market insights for any property in your area
                     </p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-down">
                     <img src="./imges/loan.png">
                     <p class="image-heading">
                         Buy / Sell Property
@@ -204,14 +235,11 @@
     </div>
     <div class="property-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 property-box">
-                    <span class="occupy-text">OCCUPY NOW</span><br>
-                    <span class="sale-text">Properties for Sale</span>
-                </div>
+            <div class="property-box">
+                <p class="occupy-text">OCCUPY NOW</p>
+                <P class="sale-text">Properties for Sale</P>
             </div>
             <div class="property-slider">
-                <!-- <div class="col-lg-4"> -->
                 <div class="card">
                     <div class="image-button">
                         <img class="card-img-top" src="./imges/slider-image1.png" alt="Card image cap">
@@ -219,17 +247,16 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title slider-heading">Apartment in Memorial Texas</h5>
-                        <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text">$ 788 per
+                        <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text pl-2">$ 788 per
                                 sqft</span></p>
                         <p class="card-simple-text">Ut euismod ultricies sollicitudin.Curabitur sed dapibus nulla
                         </p>
-                        <p class="card-below-text"><img src="./imges/bathtub.png"><span class="inside-card-text pr-2">
+                        <p class="card-below-text flex-container"><img src="./imges/bathtub.png"><span
+                                class="inside-card-text pr-2">
                                 Baths: 2</span> <img src="./imges/slumber.png">
                             Bedroom: 3</p>
                     </div>
                 </div>
-                <!-- </div>
-                <div class="col-lg-4"> -->
                 <div class="card">
                     <div class="image-button">
                         <img class="card-img-top" src="./imges/slider-image2.png" alt="Card image cap">
@@ -237,29 +264,12 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title slider-heading">Apartment in Memorial Texas</h5>
-                        <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text">$ 788 per
+                        <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text pl-2">$ 788 per
                                 sqft</span></p>
                         <p class="card-simple-text">Ut euismod ultricies sollicitudin.Curabitur sed dapibus nulla
                         </p>
-                        <p class="card-below-text"><img src="./imges/bathtub.png"><span class="inside-card-text pr-2">
-                                Baths: 2</span> <img src="./imges/slumber.png">
-                            Bedroom: 3</p>
-                    </div>
-                </div>
-                <!-- </div>
-                <div class="col-lg-4"> -->
-                <div class="card">
-                    <div class="image-button">
-                        <img class="card-img-top" src="./imges/slider-image3.png" alt="Card image cap">
-                        <button class="btn">For Sale</button>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title slider-heading">Apartment in Memorial Texas</h5>
-                        <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text">$ 788 per
-                                sqft</span></p>
-                        <p class="card-simple-text">Ut euismod ultricies sollicitudin.Curabitur sed dapibus nulla
-                        </p>
-                        <p class="card-below-text"><img src="./imges/bathtub.png"><span class="inside-card-text pr-2">
+                        <p class="card-below-text flex-container"><img src="./imges/bathtub.png"><span
+                                class="inside-card-text pr-2">
                                 Baths: 2</span> <img src="./imges/slumber.png">
                             Bedroom: 3</p>
                     </div>
@@ -271,11 +281,12 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title slider-heading">Apartment in Memorial Texas</h5>
-                        <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text">$ 788 per
+                        <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text pl-2">$ 788 per
                                 sqft</span></p>
                         <p class="card-simple-text">Ut euismod ultricies sollicitudin.Curabitur sed dapibus nulla
                         </p>
-                        <p class="card-below-text"><img src="./imges/bathtub.png"><span class="inside-card-text pr-2">
+                        <p class="card-below-text flex-container"><img src="./imges/bathtub.png"><span
+                                class="inside-card-text pr-2">
                                 Baths: 2</span> <img src="./imges/slumber.png">
                             Bedroom: 3</p>
                     </div>
@@ -287,24 +298,41 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title slider-heading">Apartment in Memorial Texas</h5>
-                        <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text">$ 788 per
+                        <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text pl-2">$ 788 per
                                 sqft</span></p>
                         <p class="card-simple-text">Ut euismod ultricies sollicitudin.Curabitur sed dapibus nulla
                         </p>
-                        <p class="card-below-text"><img src="./imges/bathtub.png"><span class="inside-card-text pr-2">
+                        <p class="card-below-text flex-container"><img src="./imges/bathtub.png"><span
+                                class="inside-card-text pr-2">
                                 Baths: 2</span> <img src="./imges/slumber.png">
                             Bedroom: 3</p>
                     </div>
                 </div>
-                <!-- </div> -->
+                <div class="card">
+                    <div class="image-button">
+                        <img class="card-img-top" src="./imges/slider-image3.png" alt="Card image cap">
+                        <button class="btn">For Sale</button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title slider-heading">Apartment in Memorial Texas</h5>
+                        <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text pl-2">$ 788 per
+                                sqft</span></p>
+                        <p class="card-simple-text">Ut euismod ultricies sollicitudin.Curabitur sed dapibus nulla
+                        </p>
+                        <p class="card-below-text flex-container"><img src="./imges/bathtub.png"><span
+                                class="inside-card-text pr-2">
+                                Baths: 2</span> <img src="./imges/slumber.png">
+                            Bedroom: 3</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="services-section">
         <div class="container">
             <p class="service-heading">WHAT WE DO FOR YOU</p>
-            <p class="our-service-text">Our Services</p>
-            <div class="row">
+            <p class="our-service-text" data-aos="zoom-in">Our Services</p>
+            <div class="row serv-sec">
                 <div class="col-lg-4">
                     <img src="./imges/service-house.png">
                     <p class="serv-img-heading">Renting and Selling Service</p>
@@ -337,45 +365,187 @@
     </div>
     <div class="trending-section">
         <div class="container">
-            <p class="service-heading">OCCUPY NOW</p><br>
+            <p class="service-heading">OCCUPY NOW</p>
             <p class="trending-header">Trending Properties</p>
+        </div>
+        <div class="trending-slider">
+            <div class="trend-slide">
+                <div class="trend-image-button">
+                    <img class="card-img-top" src="./imges/slider-image3.png" alt="Card image cap">
+                    <button class="btn">Trending</button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title trend-slider-heading">Apartment in Memorial Texas</h5>
+                    <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text pl-2">$ 788 per
+                            sqft</span></p>
+                    <p class="trend-simple-text">Ut euismod ultricies sollicitudin.Curabitur sed dapibus nulla
+                    </p>
+                    <hr>
+                    <p class="card-below-text flex-container"><img src="./imges/trend-bathtub.png"><span
+                            class="inside-card-text pr-2">
+                            Baths: 2</span> <img src="./imges/trend-slumber.png">
+                        Bedroom: 3</p>
+                </div>
+            </div>
+            <div class="trend-slide">
+                <div class="trend-image-button">
+                    <img class="card-img-top" src="./imges/slider-image2.png" alt="Card image cap">
+                    <button class="btn">Trending</button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title trend-slider-heading">Apartment in Memorial Texas</h5>
+                    <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text pl-2">$ 788 per
+                            sqft</span></p>
+                    <p class="trend-simple-text">Ut euismod ultricies sollicitudin.Curabitur sed dapibus nulla
+                    </p>
+                    <hr>
+                    <p class="card-below-text flex-container"><img src="./imges/trend-bathtub.png"><span
+                            class="inside-card-text pr-2">
+                            Baths: 2</span> <img src="./imges/trend-slumber.png">
+                        Bedroom: 3</p>
+                </div>
+            </div>
+            <div class="trend-slide">
+                <div class="trend-image-button">
+                    <img class="card-img-top" src="./imges/slider-image1.png" alt="Card image cap">
+                    <button class="btn">Trending</button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title trend-slider-heading">Apartment in Memorial Texas</h5>
+                    <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text pl-2">$ 788 per
+                            sqft</span></p>
+                    <p class="trend-simple-text">Ut euismod ultricies sollicitudin.Curabitur sed dapibus nulla
+                    </p>
+                    <hr>
+                    <p class="card-below-text flex-container"><img src="./imges/trend-bathtub.png"><span
+                            class="inside-card-text pr-2">
+                            Baths: 2</span> <img src="./imges/trend-slumber.png">
+                        Bedroom: 3</p>
+                </div>
+            </div>
+            <div class="trend-slide">
+                <div class="trend-image-button">
+                    <img class="card-img-top" src="./imges/slider-image3.png" alt="Card image cap">
+                    <button class="btn">Trending</button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title trend-slider-heading">Apartment in Memorial Texas</h5>
+                    <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text pl-2">$ 788 per
+                            sqft</span></p>
+                    <p class="trend-simple-text">Ut euismod ultricies sollicitudin.Curabitur sed dapibus nulla
+                    </p>
+                    <hr>
+                    <p class="card-below-text flex-container"><img src="./imges/trend-bathtub.png"><span
+                            class="inside-card-text pr-2">
+                            Baths: 2</span> <img src="./imges/trend-slumber.png">
+                        Bedroom: 3</p>
+                </div>
+            </div>
+            <div class="trend-slide">
+                <div class="trend-image-button">
+                    <img class="card-img-top" src="./imges/slider-image2.png" alt="Card image cap">
+                    <button class="btn">Trending</button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title trend-slider-heading">Apartment in Memorial Texas</h5>
+                    <p class="card-text prop-card-text">$ 150,000 <span class="inside-card-text pl-2">$ 788 per
+                            sqft</span></p>
+                    <p class="trend-simple-text">Ut euismod ultricies sollicitudin.Curabitur sed dapibus nulla
+                    </p>
+                    <hr>
+                    <p class="card-below-text flex-container"><img src="./imges/trend-bathtub.png"><span
+                            class="inside-card-text pr-2">
+                            Baths: 2</span> <img src="./imges/trend-slumber.png">
+                        Bedroom: 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row above-text">
+                <div class="col-lg-3 ml-4 about-us">
+                    <div class="footer-heading">ABOUT US</div>
+                    <p class="copyright-text change-transform">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do
+                    </p>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-2">
+                    <div class="footer-heading">CUSTOMER SERVICE</div>
+                    <div class="copyright-text">
+                        <p>TERMS OF USE</p>
+                        <p>PRIVACY POLICY </p>
+                        <p>F.A.Q</p>
+                        <p>CONTACT INFO</p>
+                        <p>CREATE ACCOUNT</p>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-2">
+                    <div class="footer-heading">USEFUL LINKS</div>
+                    <div class="copyright-text">
+                        <p>ABOUT US</p>
+                        <p>NEWS & BLOGS</p>
+                        <p>GALLERY</p>
+                        <p>LOCATIONS</p>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-heading">CONTACT US</div>
+                    <div class="copyright-text">
+                        <p>CALL US:1(800) 233-274</p>
+                        <p>HOURS:Mon-Fri 9am-8pm</p>
+                        <p>EMAIL:example@gmail.com</p>
+                        <p>ADDRESS:Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container copy">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="copyright-text ml-4 copyright-margin">COPYRIGHT 2019.ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="col-lg-6 copyright-margin">
+                    <ul>
+                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i>
+                        </li>
+                        <li><img src="./imges/google-plus.png"></li>
+                        <li><i class="fa fa-youtube" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-
-    <!-- Popper -->
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-
-    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-
-    <!-- Slick js-->
-    
-    <!-- Initialize Bootstrap functionality -->
-    <script>
-        
-        // Initialize tooltip component
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-        
-        // Initialize popover component
-        $(function () {
-            $('[data-toggle="popover"]').popover()
-        })
-        
-        </script>
-
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
     <!-- Custom js-->
     <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+  AOS.init({
+    // duration: 1200,
+  });
+});
+    </script>
 </body>
 
 </html>
