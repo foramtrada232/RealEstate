@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+/* @import "compass/css3"; */
+
 
 body{
     overflow-x: hidden;
@@ -89,11 +91,10 @@ header{
     border-radius: 2px;
     border-style: solid;
     border-width: 1px;
-    border-color: #e1e1e1;
     box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.2);
     margin-left: -120px;
     z-index: 9999999;
-    background-color: #fff;
+    background-color: #000;
     border-top:4px solid #D80B15;
 }
 .searchlink.open .searchform {
@@ -127,7 +128,7 @@ header{
     top: 13px;
     width: 35px;
     background-color: #be2d5d;
-    height: 43px;
+    height: 41px;
 }
 
 /* banner section css */
@@ -137,8 +138,25 @@ header{
     font-family: "Hind";
     font-weight: 600;
     text-align: center;
-    margin-top: 130px;
+    white-space: nowrap;
+    margin: 130px auto 0 auto; 
+    overflow: hidden; 
+    animation: 
+      typing 3.5s steps(20, end),
+      blink-caret .5s step-end infinite;
+      /* border-right: .15em solid#be2d5d; */
 }
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #be2d5d }
+  }
 .banner-text{
     font-size: 18px;
     color: #ffffff;
@@ -246,6 +264,9 @@ select {
 .how-work-section{
     background-color: #000;
 }
+/* .work-section .col-lg-4{
+    animation:flipInX .5s ease-in;
+} */
 .simple-text{
     font-size: 18px;
     color: #be2d5d;
@@ -585,3 +606,62 @@ select {
     display: inline-block;
     padding: 10px;
 }
+
+
+
+/* FLIPIN X CSS */
+@-webkit-keyframes flipInX {
+    0% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+    }
+  }
+  
+  @keyframes flipInX {
+    0% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    
+    100% {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+    }
+  }
+  
+  .flipInX {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX;
+  }
+/* ROTATE ANNIMATION  */
+  [data-aos="rotate-ac"] {
+  transform: rotate(180deg);
+  transition-property: transform;
+}
+
+[data-aos="rotate-ac"].aos-animate {
+  transform: rotate(0deg);
+}
+
+[data-aos="rotate-c"] {
+  transform: rotate(-180deg);
+  transition-property: transform;
+}
+
+[data-aos="rotate-c"].aos-animate {
+  transform: rotate(0deg);
+}
+  

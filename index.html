@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <header id="change">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light p-0 m-0 header-menu">
-                    <a class="navbar-brand logo" href="index.html"><img src="./imges/RealEstate.png"></a>
+                    <a class="navbar-brand logo wow shake" href="index.html"><img src="./imges/RealEstate.png"></a>
                     <button class="navbar-toggler hide-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -46,17 +46,16 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">CONTACT US</a>
                             </li>
-                            <div class="">
-                                <li class="nav-item searchlink" id="searchlink">
-                                    <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i>
-                                    </a>
-                                    <div class="searchform">
-                                        <form id="search" action="">
-                                            <input type="text" class="s" id="s" name="s" placeholder="keywords...">
-                                            <button type="submit" class="sbtn"><i class="fa fa-search"></i></button>
-                                        </form>
-                                    </div>
-                                </li>
+                            <li class="nav-item searchlink toggle_sidebar" id="searchlink">
+                                <a class="nav-link toggle_sidebar" href="#sidebar_extended"><i class="fa fa-search"
+                                        aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <div class="searchform" id="sidebar_extended">
+                                <form id="search" action="">
+                                    <input type="text" class="s" id="s" name="s" placeholder="keywords...">
+                                    <button type="submit" class="sbtn"><i class="fa fa-search"></i></button>
+                                </form>
                             </div>
                         </ul>
                     </div>
@@ -66,10 +65,11 @@
             <div class="row">
                 <div class="col-lg-7 bg-black-shadow">
                     <div class="black-shadow-content">
-                        <p class="banner-heading">Buy & Sell Property Here</p>
-                        <p class="banner-text">Find Apartments,Business & Houses Everywhere</p>
+                        <p class="banner-heading wow bounceInDown">Buy & Sell Property Here</p>
+                        <p class="banner-text wow bounceInLeft" data-wow-duration="3.8s">Find Apartments,Business &
+                            Houses Everywhere</p>
                         <center>
-                            <div class="rectangle">
+                            <div class="rectangle" data-aos="zoom-in-down" data-aos-duration="2000">
                                 <div class="input_with_icon">
                                     <div class="input-group">
                                         <input type="text" class="form-control dark-input"
@@ -165,13 +165,13 @@
                     <div class="flex justify-content-center image-card ">
                         <div class="row small-image">
                             <div class="col-sm-6">
-                                <div class="black-image" data-aos="zoom-in">
+                                <div class="black-image wow fadeInDown" data-wow-duration="1.5s">
                                     <img class="overlay-img mt-4" src="./imges/building.png">
                                     <p>Appartment</p>
                                 </div>
                             </div>
                             <div class="col-sm-6 left-img">
-                                <div class="black-image" data-aos="zoom-in">
+                                <div class="black-image wow fadeInDown" data-wow-duration="1.5s">
                                     <img class="overlay-img mt-4" src="imges/house.png">
                                     <p>House</p>
                                 </div>
@@ -179,13 +179,13 @@
                         </div>
                         <div class="row small-image mt-3">
                             <div class="col-sm-6 pt-1">
-                                <div class="black-image" data-aos="zoom-in">
+                                <div class="black-image wow fadeInUp" data-wow-duration="1.5s">
                                     <img class="overlay-img mt-4 p-1" src="./imges/mansion.png">
                                     <p>Luxury</p>
                                 </div>
                             </div>
                             <div class="col-sm-6 left-img">
-                                <div class="black-image" data-aos="zoom-in">
+                                <div class="black-image wow fadeInUp" data-wow-duration="1.5s">
                                     <img class="overlay-img mt-4" src="./imges/villa.png">
                                     <p>Villa</p>
                                 </div>
@@ -198,12 +198,12 @@
     </div>
     <div class="how-work-section">
         <div class="container">
-            <div class="text-box">
+            <div class="text-box wow shake">
                 <p class="simple-text">SIMPLE TEXT</p>
                 <P class="how-work-text">How It Works</P>
             </div>
             <div class="row work-section">
-                <div class="col-lg-4" data-aos="fade-down">
+                <div class="col-lg-4 wow fadeInLeft">
                     <img src="./imges/map.png">
                     <p class="image-heading">
                         Map Search
@@ -212,7 +212,7 @@
                         search exactly where you are intersted to buy a property with your budget and requierment
                     </p>
                 </div>
-                <div class="col-lg-4" data-aos="fade-down">
+                <div class="col-lg-4 wow fadeInLeft">
                     <img src="./imges/search-house.png">
                     <p class="image-heading">
                         Property Lookup
@@ -221,7 +221,7 @@
                         Search with estimated values,energy scores and market insights for any property in your area
                     </p>
                 </div>
-                <div class="col-lg-4" data-aos="fade-down">
+                <div class="col-lg-4 wow fadeInLeft">
                     <img src="./imges/loan.png">
                     <p class="image-heading">
                         Buy / Sell Property
@@ -235,12 +235,12 @@
     </div>
     <div class="property-section">
         <div class="container">
-            <div class="property-box">
+            <div class="property-box wow bounce">
                 <p class="occupy-text">OCCUPY NOW</p>
                 <P class="sale-text">Properties for Sale</P>
             </div>
             <div class="property-slider">
-                <div class="card">
+                <div class="card" data-aos="rotate-ac" data-aos-duration="1500" data-aos-easing="ease-in-quad">
                     <div class="image-button">
                         <img class="card-img-top" src="./imges/slider-image1.png" alt="Card image cap">
                         <button class="btn">For Sale</button>
@@ -257,7 +257,8 @@
                             Bedroom: 3</p>
                     </div>
                 </div>
-                <div class="card">
+                <!-- <div class="card" data-aos="zoom-in-left" data-aos-duration="2000"> -->
+                <div class="card" data-aos="rotate-ac" data-aos-duration="1500" data-aos-easing="ease-in-quad">
                     <div class="image-button">
                         <img class="card-img-top" src="./imges/slider-image2.png" alt="Card image cap">
                         <button class="btn">For Sale</button>
@@ -274,7 +275,7 @@
                             Bedroom: 3</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="rotate-ac" data-aos-duration="1500" data-aos-easing="ease-in-quad">
                     <div class="image-button">
                         <img class="card-img-top" src="./imges/slider-image3.png" alt="Card image cap">
                         <button class="btn">For Sale</button>
@@ -330,10 +331,10 @@
     </div>
     <div class="services-section">
         <div class="container">
-            <p class="service-heading">WHAT WE DO FOR YOU</p>
-            <p class="our-service-text" data-aos="zoom-in">Our Services</p>
+            <p class="service-heading" data-aos="fade-left" data-aos-duration="1000">WHAT WE DO FOR YOU</p>
+            <p class="our-service-text" data-aos="fade-right" data-aos-duration="1000">Our Services</p>
             <div class="row serv-sec">
-                <div class="col-lg-4">
+                <div class="col-lg-4 wow fadeInRight">
                     <img src="./imges/service-house.png">
                     <p class="serv-img-heading">Renting and Selling Service</p>
                     <p class="service-simple-text">
@@ -342,7 +343,7 @@
                         laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 wow fadeInRight">
                     <img src="./imges/service-settings.png">
                     <p class="serv-img-heading">Property Managment</p>
                     <p class="service-simple-text">
@@ -351,7 +352,7 @@
                         laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 wow fadeInRight">
                     <img src="./imges/service-apartment.png">
                     <p class="serv-img-heading">Property Listing</p>
                     <p class="service-simple-text">
@@ -365,14 +366,15 @@
     </div>
     <div class="trending-section">
         <div class="container">
-            <p class="service-heading">OCCUPY NOW</p>
-            <p class="trending-header">Trending Properties</p>
+            <p class="service-heading wow shake">OCCUPY NOW</p>
+            <p class="trending-header wow shake">Trending Properties</p>
         </div>
         <div class="trending-slider">
-            <div class="trend-slide">
+            <div class="trend-slide wow flipInY" data-wow-duration="2s">
                 <div class="trend-image-button">
                     <img class="card-img-top" src="./imges/slider-image3.png" alt="Card image cap">
                     <button class="btn">Trending</button>
+                    <div class="Hello"></div>
                 </div>
                 <div class="card-body">
                     <h5 class="card-title trend-slider-heading">Apartment in Memorial Texas</h5>
@@ -387,7 +389,7 @@
                         Bedroom: 3</p>
                 </div>
             </div>
-            <div class="trend-slide">
+            <div class="trend-slide wow flipInY" data-wow-duration="2s">
                 <div class="trend-image-button">
                     <img class="card-img-top" src="./imges/slider-image2.png" alt="Card image cap">
                     <button class="btn">Trending</button>
@@ -405,7 +407,7 @@
                         Bedroom: 3</p>
                 </div>
             </div>
-            <div class="trend-slide">
+            <div class="trend-slide wow flipInY" data-wow-duration="2s">
                 <div class="trend-image-button">
                     <img class="card-img-top" src="./imges/slider-image1.png" alt="Card image cap">
                     <button class="btn">Trending</button>
@@ -423,7 +425,7 @@
                         Bedroom: 3</p>
                 </div>
             </div>
-            <div class="trend-slide">
+            <div class="trend-slide wow flipInY" data-wow-duration="2s">
                 <div class="trend-image-button">
                     <img class="card-img-top" src="./imges/slider-image3.png" alt="Card image cap">
                     <button class="btn">Trending</button>
@@ -479,7 +481,7 @@
                     <div class="footer-heading">CUSTOMER SERVICE</div>
                     <div class="copyright-text">
                         <p>TERMS OF USE</p>
-                        <p>PRIVACY POLICY </p>
+                        <p>PRIVACY POLICY</p>
                         <p>F.A.Q</p>
                         <p>CONTACT INFO</p>
                         <p>CREATE ACCOUNT</p>
@@ -527,24 +529,26 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <!-- Custom js-->
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript">
-    $(document).ready(function () {
-  AOS.init({
-    // duration: 1200,
-  });
-});
+        $(document).ready(function () {
+            new WOW().init();
+            AOS.init({
+            });
+        });
     </script>
 </body>
 

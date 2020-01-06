@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+  
   // Change back ground color on scroll position
   var scroll_pos = 0;
   $(document).scroll(function () {
@@ -12,11 +12,18 @@ $(document).ready(function () {
     }
   });
 
-  $(function () {
-    $('#searchlink').on('click', function (e) {
-      $(this).toggleClass('open');
+// TOGGLE Search bar 
+  $("#searchlink").click(function (e) {
+    e.stopPropagation();
+    $(".searchform").toggle();
+    $(".searchform").on("click", function (event) {
+      event.stopPropagation();
     });
   });
+  $(document).on("click", function () {
+    $(".searchform").hide();
+  });
+
 
   $('.property-slider').slick({
     dots: false,
